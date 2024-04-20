@@ -2,109 +2,160 @@
 <html>
 
 <head>
-   <link rel="stylesheet" href="estios.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body>
+<body class="bakc-body">
+    <div id="titulo">
+        <h5 class="text-center subrayado nombre"><--- DIEGO BRUNETTI - DESARROLLADOR FULLSTACK ---></h5>
+        <h1 class="text-center blanco">PORTFOLIO</h1>
+    </div>
+
+    <div id="tabs" class=" btn-group w-100" role="group">
+            <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia"
+                role="button" aria-expanded="false" aria-controls="experiencia">
+                Experiencia Laboral
+            </button>
+            <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia2" role="button"
+                aria-expanded="false" aria-controls="experiencia">
+                Conociminetos
+            </button>
+            <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia2" role="button"
+                aria-expanded="false" aria-controls="experiencia">
+                Estudios
+            </button>
+            <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia2" role="button"
+                aria-expanded="false" aria-controls="experiencia">
+                Proyectos
+            </button>
+            <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia2" role="button"
+                aria-expanded="false" aria-controls="experiencia">
+                Contactame
+            </button>
+    </div>
+    <div class="collapse " id="experiencia">
+        <div class="container py-2 mt-4 mb-4">
+            <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge badge-pill bakc-verde border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col py-2">
+                    <div class="card bakc-gris ">
+                        <div class="card-body blanco">
+                            <div class="float-right blanco">Fec 2023 - Actualidad</div>
+                            <h4 class="blanco">Desarrollador Backend (Tauri Solutions SRL - Contrato Temporal)</h4>
+                            <ul>
+                                <li>
+                                    <p class="card-text blanco">Desarrollo backend en sistemas militares.</p>
+                                </li>
+                                <li>
+                                    <p class="card-text blanco">Dentro del proyecto SITEA (Sistema Integrado Táctico del
+                                        Ejército Argentino).</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge badge-pill bakc-verde border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col py-2">
+                    <div class="card bakc-gris ">
+                        <div class="card-body blanco">
+                            <div class="float-right blanco">May 2023 - Ene 2024</div>
+                            <h4 class="blanco">Desarrollador Backend (Tauri Solutions SRL - Contrato Temporal)</h4>
+                            <ul>
+                                <li>
+                                    <p class="card-text blanco">Desarrollo backend en sistemas militares.</p>
+                                </li>
+                                <li>
+                                    <p class="card-text blanco">Dentro de los proyectos SATAC (Sistema Automatizado de
+                                        Tiro
+                                        de Artillería de Campaña) y SIPAAC (Sistema Integrado
+                                        de Puntería Autónoma de Artillería de Campaña).</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse" id="experiencia2">
+        <div class="container py-2 mt-4 mb-4">
+            <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge badge-pill bakc-verde border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col py-2">
+                    <div class="card bakc-gris ">
+                        <div class="card-body blanco">
+                            <div class="float-right blanco">Fec 2023 - Actualidad</div>
+                            <h4 class="blanco">Desarrollador Backend (Tauri Solutions SRL - Contrato Temporal)</h4>
+                            <ul>
+                                <li>
+                                    <p class="card-text blanco">Desarrollo backend en sistemas militares.</p>
+                                </li>
+                                <li>
+                                    <p class="card-text blanco">Dentro del proyecto SITEA (Sistema Integrado Táctico del
+                                        Ejército Argentino).</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="text-center">
-        <h1 class="red">Soy Brunetti Diego fff</h1>
-        <h2>Soy estudiante en Tecnitura superior en informatica aplicada y desarrollador de videojuegos especializado en
-            Unity y C#.</h2>
-        <div class="fotoC">
-            <img id="foto" src="/imagenes/foto.png" alt="Diego Brunetti" />
-        </div>
+        <h3 class="blanco">Desarrollador Back-End en sistemas militares (SITEA actualmente). Me adapto
+            fácilmente a nuevas tecnologías y
+            lenguajes al poseer amplios conocimientos en el área informática, en especial paradigmas de programacián.
+            Constantemente
+            perfeccionando mis habilidades de manera proactiva y con ganas de crecer dentro del rubro. Buena
+            predisposición para
+            trabajar y cambios dentro del mismo. </h3>
     </div>
 
-    <div class="row justify-content-center text-center bg-primary">
-        <div class="col col-md-7 seccion-bienvenida">
-            <h1>Bienvenido/a a mi Portafolio</h1>
-            <p>
-                Estoy estudiando la técnicatura superior en informática aplicada (3° año) en el
-                Instituto Nacional Superior del Profesorado Técnico. Además hice una diplomatura
-                en desarrollo y programacion de videojuegos utilizando Unity (C#) en la Universidad
-                Tecnológica Nacional.
-            </p>
-        </div>
-    </div>
 
-    <div class="ajusteArriba">
-        <div class="row justify-content-md-center text-center">
-            <div class="col col-3 bg-white efectoBordeTabla habilidades">
-                <i class="bi-hdd-fill"></i>
-                <h3>Back-End</h3>
-                <p>
-                    Trabajo en el diseño de base de datos y desarrollo de aplicaciones.
-                </p>
-                <p class="text-primary cabecera">
-                    Stack:
-                </p>
-                <p>
-                    ASP.NET Core, Java, MySQL, SQL Server, VBA
-                </p>
-                <p class="text-primary cabecera">
-                    Experiencia:
-                </p>
-                <ul>
-                    <li>Web APIs</li>
-                    <li>Spring Boot - Spring MVC</li>
-                    <li>Hibernate</li>
-                    <li>SQL Queries</li>
-                    <li>Base de datos relacionales (Modelo relacional, Normalización)</li>
-                    <li>Programación orientada a objetos (POO, Principios SOLID)</li>
-                    <li>Diagramas UML - Entidad Relación</li>
-                    <li>Patrones de diseño: Modelo-Vista-Controlador, Estrategy, Facade, Factory</li>
-                    <li>Java (Ant, Maven)</li>
-                    <li>Servlets como controladores</li>
-                </ul>
-            </div>
-
-            <div class="col col-3 bg-white efectoBordeTabla2 habilidades">
-                <i class="bi-code-slash"></i>
-                <h3>Front-End</h3>
-                <p>
-                    Puedo diseñar y crear front-ends robustos de manera eficiente para el negocio.
-                </p>
-                <p class="text-primary cabecera">
-                    Stack:
-                </p>
-                <p>
-                    HTML5, CSS
-                </p>
-                <p class="text-primary cabecera">
-                    Experiencia:
-                </p>
-                <ul>
-                    <li>JavaServer Pages Standard Tag Library - Expression Language</li>
-                    <li>Bootstrap</li>
-                    <li>Razor</li>
-                </ul>
-            </div>
-            <div class="col col-3 bg-white efectoBordeTabla3 habilidades">
-                <i class="bi bi-controller"></i>
-                <h3>Videojuegos</h3>
-                <p>
-                    Puedo diseñar, desarrollar y programar videojuegos de generos variados.
-                </p>
-                <p class="text-primary cabecera">
-                    Stack:
-                </p>
-                <p>
-                    Unity, C#
-                </p>
-                <p class="text-primary cabecera">
-                    Experiencia:
-                </p>
-                <ul>
-                    <li>Shoot'em up</li>
-                    <li>Tower Defense</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

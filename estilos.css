@@ -1,0 +1,45 @@
+.text-center {
+    text-align: center;
+}
+.subrayado{
+    text-decoration: underline;
+}
+
+.bakc-body {
+    background-color: rgb(0, 0, 0);
+}
+.acomodo{
+    align-content: space-around;
+}
+.bakc-gris {
+    background-color: rgba(92, 95, 92, 0.726);
+}
+
+.bakc-verde {
+    background-color: rgba(116, 241, 91, 0.884);
+}
+.bakc-verde:hover {
+
+    background-color: rgb(0, 255, 221); /* Cambia el color del texto al hacer hover */
+    
+}
+.bakc-verde:active {
+
+    background-color: rgb(0, 225, 255); /* Cambia el color del texto al hacer hover */
+    color: blue;
+}
+
+.bakc-verde:focus  {
+
+    background-color: rgb(0, 225, 255); /* Cambia el color del texto al hacer hover */
+}
+
+.nombre{
+    color: rgb(0, 255, 221);
+}
+.principio{
+    justify-content: start;
+}
+.blanco {
+    color: white;
+}
