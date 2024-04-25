@@ -1,16 +1,19 @@
 .text-center {
     text-align: center;
 }
-.subrayado{
+
+.subrayado {
     text-decoration: underline;
 }
 
 .bakc-body {
     background-color: rgb(0, 0, 0);
 }
-.acomodo{
+
+.acomodo {
     align-content: space-around;
 }
+
 .bakc-gris {
     background-color: #1E1E1E;
 }
@@ -18,82 +21,105 @@
 .bakc-gris2 {
     background-color: rgba(92, 95, 92, 0.726);
 }
+.bakc-gris3 {
+    background-color: rgba(224, 224, 224, 0.795);
+}
+
 .bakc-verde-solo {
     background-color: rgba(116, 241, 91, 0.884);
 }
+
 .bakc-verde {
     background-color: rgba(116, 241, 91, 0.884);
 }
+
 .bakc-verde:hover {
 
-    background-color: rgb(0, 255, 221); /* Cambia el color del texto al hacer hover */
-    
+    background-color: rgb(0, 255, 221);
+    /* Cambia el color del texto al hacer hover */
+
 }
+
 .bakc-verde:active {
 
-    background-color: rgb(0, 225, 255); /* Cambia el color del texto al hacer hover */
+    background-color: rgb(0, 225, 255);
+    /* Cambia el color del texto al hacer hover */
     color: blue;
 }
 
-.bakc-verde:focus  {
+.bakc-verde:focus {
 
-    background-color: rgb(0, 225, 255); /* Cambia el color del texto al hacer hover */
+    background-color: rgb(0, 225, 255);
+    /* Cambia el color del texto al hacer hover */
 }
 
-.nombre{
+.nombre {
     color: rgb(0, 255, 221);
 }
-.back{
+
+.back {
     color: #4EC9B0;
 }
-.str{
-    color:#CE9178;
+.back2 {
+    color: #DCDCAA;
 }
-.dev{
+
+.str {
+    color: #CE9178;
+}
+
+.dev {
     color: #569CD6;
 }
-.principio{
+
+.principio {
     justify-content: start;
 }
+
 .blanco {
     color: white;
 }
+
 .tab {
-    padding-left: 20px; /* Ajusta el valor según tus necesidades */
-}
-.atr{
- color: #DCDCAA;   
+    padding-left: 20px;
+    /* Ajusta el valor según tus necesidades */
 }
 
+.atr {
+    color: #DCDCAA;
+}
 
 
-html{
+
+html {
     font-family: sans-serif;
-    }
-.lineatemp{
+}
+
+.lineatemp {
     position: relative;
     width: 600px;
     margin: 0 auto;
     border: 1px solid lightgray;
     border-radius: 10px;
-    }
-.fila{
+}
+
+.fila {
     display: flex;
     justify-content: start;
-    border-bottom: 1px solid lightgray;
     position: relative;
-    }
+}
 
-.fila .disco{
+.fila .disco {
     width: 36px;
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
-    }
-.fila .disco:after{
-    content:'';
+}
+
+.fila .disco:after {
+    content: '';
     position: absolute;
     top: 0;
     left: calc(505 - 2px);
@@ -101,29 +127,115 @@ html{
     width: 3px;
     background: #80DEEA;
     z-index: -1;
-    }
-.fila:first-child .disco:after{
+}
+
+.fila:first-child .disco:after {
     height: 50%;
     top: 50%;
-    }
-.fila:last-child .disco:after{
+}
+
+.fila:last-child .disco:after {
     height: 50%;
-    }
-.fila .disco > div{
+}
+
+.fila .disco>div {
     width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: lightblue;
     box-sizing: border-box;
-    }
-.fila div:nth-of-type(2){
+}
+
+.fila div:nth-of-type(2) {
     width: 20%;
     padding: 4px;
     display: flex;
-    align-items:center;
-    }
-.fila div:nth-of-type(3){
+    align-items: center;
+}
+
+.fila div:nth-of-type(3) {
     width: 60%;
     padding: 4px;
-    }
-    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+#toggleBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+#toggleBtn2 {
+    cursor: pointer;
+}
+
+.terminal {
+    width: 100%;
+    max-width: auto; /* Aumentamos el ancho máximo para permitir más espacio para el texto */
+    height: 500px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: monospace;
+  }
+  
+  .barra-titulo {
+    background-color: rgba(224, 224, 224, 0.795);
+    color: black;
+    padding: 5px;
+  }
+  
+  .contenido {
+    padding: 10px;
+  }
+  
+  
+  .usuario {
+    color: #00ff00; /* Verde */
+  }
+  
+  .host {
+    color: #ff0000; /* Rojo */
+  }
+  
+  .directorio {
+    color: #0000ff; /* Azul */
+  }
+
+  .enum{
+    color: #4EC9B0;
+  }
+  

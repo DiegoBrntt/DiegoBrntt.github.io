@@ -4,6 +4,7 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -11,106 +12,554 @@
 </head>
 
 <body class="bakc-body w-100">
-    <div id="titulo">
-        <h5 class="text-center subrayado nombre"><--- DIEGO BRUNETTI - DESARROLLADOR FULLSTACK ---></h5>
-        <h1 class="text-center blanco">PORTFOLIO</h1>
-    </div>
+    <div class="container">
+        <i id="toggleBtn" class="bi bi-list blanco w-100"></i>
+        <aside id="sidebar">
+            <ul>
+                <li class="d-flex justify-content-end"><i id="toggleBtn2" class="bi bi-list blanco"></i></li>
+                <li><button class="btn bakc-verde w-100" id="exp">
+                        Experiencia Laboral
+                    </button></li>
+                <li><button class="btn bakc-verde w-100" id="con">
+                        Conociminetos
+                    </button></li>
+                <li><button class="btn bakc-verde w-100" id="est">
+                        Estudios
+                    </button></li>
+                <li><button class="btn bakc-verde w-100">
+                        Proyectos
+                    </button></li>
+                <li><button class="btn bakc-verde w-100">
+                        Contactame
+                    </button></li>
+            </ul>
+        </aside>
 
-    <div id="tabs" class=" btn-group w-100" role="group">
-        <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia" role="button"
-            aria-expanded="false" aria-controls="experiencia">
-            Experiencia Laboral
-        </button>
-        <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#conocimientos" role="button"
-            aria-expanded="false" aria-controls="conocimientos">
-            Conociminetos
-        </button>
-        <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia2" role="button"
-            aria-expanded="false" aria-controls="experiencia">
-            Estudios
-        </button>
-        <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia2" role="button"
-            aria-expanded="false" aria-controls="experiencia">
-            Proyectos
-        </button>
-        <button class=" btn bakc-verde w-100" data-bs-toggle="collapse" data-bs-target="#experiencia2" role="button"
-            aria-expanded="false" aria-controls="experiencia">
-            Contactame
-        </button>
-    </div>
 
-    <div class="collapse" id="experiencia">
-        <div class="d-flex justify-content-center">
-            <div class="lineatemp m-2 w-75 bakc-gris">
-                <div class="fila blanco">
-                    <div class="disco">
-                        <div></div>
-                    </div>
-                    <div class="text-center">Fec 2023 - Actualidad</div>
-                    <div class="border-start w-100">
-                        <span class="fw-bold">
-                            <span class="dev">new</span> 
-                            <span class="back">DesarrolladorBackend</span>
-                            (
-                                <span class="atr">Empresa: </span>
-                                <span class="str">"Tauri Solutions SRL"</span>, 
-                                <span class="atr">TipoContrato: </span>
-                                <span class="str">"Contrato Temporal"</span>
-                            )
-                        </span>
-                        {
-                        <br>
-                        <span class="dev tab">this</span>.
-                        <span>Descripción = </span>
-                        <span class="str">"Dentro del proyecto SITEA (Sistema Integrado Táctico del
-                            Ejército Argentino)."</span>;
-                        <br>
-                        }
+        <div class="content">
+            <div id="titulo">
+                <h1 class="text-center blanco">PORTFOLIO</h1>
+            </div>
 
+            <div class="d-flex justify-content-center ">
+                <div id="term" class="terminal collapse show">
+                    <div class="barra-titulo w-100 border d-flex justify-content-between bakc-gris3">
+                        <div class="mr-2">DIEGO BRUNETTI - Terminal</div>
+                        <div class="mr-2">X</div>
                     </div>
-                </div>
-                <div class="fila blanco">
-                    <div class="disco">
-                        <div></div>
-                    </div>
-                    <div class="text-center">May 2023 - Ene 2024</div>
-                    <div class="border-start w-100">
-                        <span class="fw-bold">
-                            <span class="dev">new</span> 
-                            <span class="back">DesarrolladorBackend</span>
-                            (
-                                <span class="atr">Empresa: </span>
-                                <span class="str">"Tauri Solutions SRL"</span>, 
-                                <span class="atr">TipoContrato: </span>
-                                <span class="str">"Contrato Temporal"</span>
-                            )
-                        </span>
-                        {
+
+                    <div id="pr" class="contenido border border-secondary bakc-gris blanco">
+                        <span class="usuario">Desarrollador</span>
+                        <span>@</span>
+                        <span class="host">Backend</span><span>:</span>
+                        <span class="directorio">~</span><span>$</span>
+                        <span id="texto" class="blanco"></span>
                         <br>
-                        <span class="dev tab">this</span>.
-                        <span>Descripción = </span>
-                        <span class="str">"Dentro de los proyectos SATAC (Sistema Automatizado de
-                            Tiro de Artillería de Campaña) y SIPAAC (Sistema Integrado
-                            de Puntería Autónoma de Artillería de Campaña)."</span>;
-                        <br>
-                        }
+                        <span id="texto2" class="blanco"></span>
                     </div>
                 </div>
             </div>
+
+            <div class="collapse" id="experiencia">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="lineatemp m-2 w-100 bakc-gris">
+                        <div class="fila blanco">
+                            <div class="w-100 m-2">
+                                <span class="fw-bold">
+                                    <span class="dev">new</span>
+                                    <span class="back">Empleo</span>
+                                    ()
+                                </span>
+                                {
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Empresa = </span>
+                                <span class="str">"Tauri Solutions SRL"</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Puesto = </span>
+                                <span class="enum">TipoPuesto</span>.
+                                <span>DEV_BACKEND</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Proyectos = </span>
+                                [
+                                <span class="str">"SATAC - (Sistema Automatizado de Tiro de Artillería de
+                                    Campaña)"</span>,
+                                <span class="str"> "SIPAAC (Sistema Integrado de Puntería Autónoma de Artillería de
+                                    Campaña)"</span>
+                                ];
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Contrato = </span>
+                                <span class="enum">TipoContrato</span>.
+                                <span>Temporal</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Modalidad = </span>
+                                <span class="enum">TipoModalidad</span>.
+                                <span>Presencial</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>FechaInicio = </span>
+                                <span class="back">DateTime</span>.
+                                <span class="back2">Parse</span>
+                                (
+                                <span class="str">"May 2023"</span>
+                                );
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>FechaFin = </span>
+                                <span class="back">DateTime</span>.
+                                <span class="back2">Parse</span>
+                                (
+                                <span class="str">"Ene 2024"</span>
+                                );
+                                <br>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lineatemp m-2 w-100 bakc-gris">
+                        <div class="fila blanco">
+                            <div class="w-100 m-2">
+                                <span class="fw-bold">
+                                    <span class="dev">new</span>
+                                    <span class="back">Empleo</span>
+                                    ()
+                                </span>
+                                {
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Empresa = </span>
+                                <span class="str">"Tauri Solutions SRL"</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Puesto = </span>
+                                <span class="enum">TipoPuesto</span>.
+                                <span>DEV_BACKEND</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Proyecto = </span>
+                                <span class="str">"SITEA - (Sistema Integrado Táctico del Ejército Argentino)"</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Contrato = </span>
+                                <span class="enum">TipoContrato</span>.
+                                <span>Temporal</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>Modalidad = </span>
+                                <span class="enum">TipoModalidad</span>.
+                                <span>Presencial</span>;
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>FechaInicio = </span>
+                                <span class="back">DateTime</span>.
+                                <span class="back2">Parse</span>
+                                (
+                                <span class="str">"Feb 2024"</span>
+                                );
+                                <br>
+                                <span class="dev tab">this</span>.
+                                <span>FechaFin = </span>
+                                <span class="back">DateTime</span>.
+                                <span>Now</span>;
+                                <br>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="conociminetos">
+                <div class="d-flex justify-content-center">
+                    <div class="row w-100">
+                        <div class="lineatemp col m-2 w-100 bakc-gris">
+                            <div class="fila blanco p-2 m-1">
+                                <div class="w-100 m-2">
+                                    <span class="fw-bold">
+                                        <span class="back">Lenguajes</span>
+                                    </span>
+                                    <br>
+                                    {
+                                    <br>
+                                    <span class="tab">JAVA</span>, <br>
+                                    <span class="tab">C#</span>, <br>
+                                    <span class="tab">C</span>, <br>
+                                    <span class="tab">C++</span>, <br>
+                                    <span class="tab">CLOJURE</span>, <br>
+                                    <span class="tab">JAVASCRIPT</span>, <br>
+                                    <span class="tab">TYPESCRIPT</span>, <br>
+                                    <span class="tab">NASM</span>, <br>
+                                    
+                                    <br>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lineatemp col m-2 w-100 bakc-gris">
+                            <div class="fila blanco p-2 m-1">
+                                <div class="w-100 m-2">
+                                    <span class="fw-bold">
+                                        <span class="enum">Paradigmas</span> 
+                                    </span>
+                                    <br>
+                                    {
+                                    <br>
+                                    <span class="tab">FUNCIONAL</span>, <br>
+                                    <span class="tab">ORIENTADO_OBJETOS</span>, <br>
+                                    <span class="tab">ESTRUCTURADO</span>, <br>
+                                    <br>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="row w-100">
+                        <div class="lineatemp col m-2 w-100 bakc-gris">
+                            <div class="fila blanco p-2 m-1">
+                                <div class="w-100 m-2">
+                                    <span class="fw-bold">
+                                        <span class="dev">new</span>
+                                        <span class="back">Lenguaje</span>
+                                        ()
+                                    </span>
+                                    {
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Nombre = </span>
+                                    <span class="str">"C/C++"</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Paradigma = </span>
+                                    <span class="enum">Paradigmas</span>.
+                                    <span>Estructurado</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Conocimientos = </span>
+                                    [ <span class="str">"Algoritmos"</span>, <span class="str">"Estructura de Datos"</span>, <span class="str">"PseudoCodigo"</span>  ];
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Proyectos = </span>
+                                    [ <a> Compilador_PL0 </a> ];
+                                    <br>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lineatemp col m-2 w-100 bakc-gris">
+                            <div class="fila blanco p-2 m-1">
+                                <div class="w-100 m-2">
+                                    <span class="fw-bold">
+                                        <span class="dev">new</span>
+                                        <span class="back">Lenguaje</span>
+                                        ()
+                                    </span>
+                                    {
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Nombre = </span>
+                                    <span class="str">"C/C++"</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Paradigma = </span>
+                                    <span class="enum">Paradigmas</span>.
+                                    <span>Estructurado</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Conocimientos = </span>
+                                    [ <span class="str">"Algoritmos"</span>, <span class="str">"Estructura de Datos"</span>, <span class="str">"PseudoCodigo"</span>  ];
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Proyectos = </span>
+                                    [ <a> Compilador_PL0 </a> ];
+                                    <br>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="estudios">
+                <div class="d-flex justify-content-center">
+                    <div class="row w-100">
+                        <div class="lineatemp col m-2 w-100 bakc-gris">
+                            <div class="fila blanco p-2 m-1">
+                                <div class="w-100 m-2">
+                                    <span class="fw-bold">
+                                        <span class="dev">new</span>
+                                        <span class="back">Estudio</span>
+                                        ()
+                                    </span>
+                                    {
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Escuela = </span>
+                                    <span class="str">"INSPT - UTN"</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Carrera = </span>
+                                    <span class="str">"Informatica aplicada"</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Cursando = </span>
+                                    <span class="dev">true</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Titulo = </span>
+                                    <span class="enum">Titulos</span>.
+                                    <span>TECNICATURA</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Inicio = </span>
+                                    <span class="back">DateTime</span>.
+                                    <span class="back2">Parse</span>
+                                    (
+                                    <span class="str">"Abr 2020"</span>
+                                    );
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Fin = </span>
+                                    <span class="dev">NULL</span>;
+                                    <br>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lineatemp col m-2 w-100 bakc-gris">
+                            <div class="fila blanco p-2 m-1">
+                                <div class="w-100 m-2">
+                                    <span class="fw-bold">
+                                        <span class="dev">new</span>
+                                        <span class="back">Estudio</span>
+                                        ()
+                                    </span>
+                                    {
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Escuela = </span>
+                                    <span class="str">"UTN"</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Carrera = </span>
+                                    <span class="str">"Desarrollo de videojuegos"</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Titulo = </span>
+                                    <span class="enum">Titulos</span>.
+                                    <span>DIPLOMATURA</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Inicio = </span>
+                                    <span class="back">DateTime</span>.
+                                    <span class="back2">Parse</span>
+                                    (
+                                    <span class="str">"Mar 2018"</span>
+                                    );
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Fin = </span>
+                                    <span class="back">DateTime</span>.
+                                    <span class="back2">Parse</span>
+                                    (
+                                    <span class="str">"Oct 2018"</span>
+                                    );
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Nota = </span>
+                                    <span>10</span>;
+                                    <br>
+                                    <span class="dev tab">this</span>.
+                                    <span>Cursando = </span>
+                                    <span class="dev">false</span>;
+                                    <br>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-
     </div>
+        <script>
+            const toggleBtn = document.getElementById('toggleBtn');
+            const toggleBtn2 = document.getElementById('toggleBtn2');
+            const sidebar = document.getElementById('sidebar');
+            const term = document.getElementById('term');
 
-    <div class="text-center">
-        <h3 class="blanco">Desarrollador Back-End en sistemas militares (SITEA actualmente). Me adapto
-            fácilmente a nuevas tecnologías y
-            lenguajes al poseer amplios conocimientos en el área informática, en especial paradigmas de programacián.
-            Constantemente
-            perfeccionando mis habilidades de manera proactiva y con ganas de crecer dentro del rubro. Buena
-            predisposición para
-            trabajar y cambios dentro del mismo. </h3>
-    </div>
+            const exp = document.getElementById('exp');
+            const con = document.getElementById('con');
+            const est = document.getElementById('est');
+
+
+            const experiencia = document.getElementById('experiencia');
+            const conociminetos = document.getElementById('conociminetos');
+            const estudios = document.getElementById('estudios');
+
+
+
+            let isOpen = false, expB = false, conB = false, estB = false;
+
+            exp.addEventListener("click", () => {
+                if (expB === false) {
+                    experiencia.classList.add("show");
+                    estudios.classList.remove("show");
+                    conociminetos.classList.remove("show");
+                    term.classList.remove("show");
+                    conB = false;
+                    estB = false;
+                    expB = true;
+                } else {
+                    experiencia.classList.remove("show");
+                    conociminetos.classList.remove("show");
+                    estudios.classList.remove("show");
+                    term.classList.add("show");
+                    conB = false;
+                    estB = false;
+                    expB = false;
+                }
+            })
+
+            con.addEventListener("click", () => {
+                if (conB === false) {
+                    experiencia.classList.remove("show");
+                    conociminetos.classList.add("show");
+                    estudios.classList.remove("show");
+                    term.classList.remove("show");
+                    conB = true;
+                    estB = false;
+                    expB = false;
+                } else {
+                    experiencia.classList.remove("show");
+                    conociminetos.classList.remove("show");
+                    estudios.classList.remove("show");
+                    term.classList.add("show");
+                    conB = false;
+                    estB = false;
+                    expB = false;
+                }
+            })
+
+            est.addEventListener("click", () => {
+                if (estB === false) {
+                    experiencia.classList.remove("show");
+                    estudios.classList.add("show");
+                    conociminetos.classList.remove("show");
+                    term.classList.remove("show");
+                    estB = true;
+                    conB = false;
+                    expB = false;
+                } else {
+                    experiencia.classList.remove("show");
+                    estudios.classList.remove("show");
+                    conociminetos.classList.remove("show");
+                    term.classList.add("show");
+                    estB = false;
+                    conB = false;
+                    expB = false;
+                }
+            })
+
+            toggleBtn.addEventListener('click', () => {
+                if (isOpen) {
+                    sidebar.style.left = '-200px';
+                    isOpen = false;
+                } else {
+                    sidebar.style.left = '0';
+                    isOpen = true;
+                }
+            });
+
+            toggleBtn2.addEventListener('click', () => {
+                if (isOpen) {
+                    sidebar.style.left = '-200px';
+                    isOpen = false;
+                } else {
+                    sidebar.style.left = '0';
+                    isOpen = true;
+                }
+            });
+
+            const textoElemento = document.getElementById('texto');
+            const textoElemento2 = document.getElementById('texto2');
+            const pr = document.getElementById('pr');
+
+            const textoOriginal = "sudo about -Diego";
+
+            const textoOriginal2 = "Desarrollador\n" +
+                "{\n" +
+                "\tTipo: Fullstack,\n" +
+                "\tPuestoActual: Backend,\n" +
+                "\tProyecto: Sistema Integrado Táctico del Ejército Argentino - SITEA,\n" +
+                "\tDescripción: \"Adaptación a nuevas tecnologías y lenguajes de manera veloz y eficiente\",\n" +
+                "\tHabilidades: [ Buenas practicas, proactividad, responsabilidad, innovación, autodidacta, creatividad, resolución de conflicto ],\n" +
+                "\tLenguajes: [ C, C++, C#, JAVA, CLOJURE, JS, TS, NASM ],\n" +
+                "\tFrameworks: [ Spring-Boot, SpringMVC, .NET, .NETCore, HIBERNATE, EXPRESS, DAPPER ],\n" +
+                "\tParadigmas: [ Orientado a Objeto, Funcional, Estructurado ],\n" +
+                "\n}";
+
+            let indice = 0;
+
+            function escribirTexto(texto, elemento) {
+                return new Promise((resolve, reject) => {
+                    function escribir() {
+                        if (indice < texto.length) {
+                            let char = texto.charAt(indice);
+
+                            switch (char) {
+                                case '\n':
+                                    const br = document.createElement('br');
+                                    elemento.appendChild(br);
+                                    break;
+                                case '\t':
+                                    const tabText = document.createTextNode('\u00A0\u00A0\u00A0\u00A0');
+                                    elemento.appendChild(tabText);
+                                    break;
+                                default:
+                                    const text = document.createTextNode(char);
+                                    elemento.appendChild(text);
+                                    break;
+                            }
+
+                            indice++;
+                            escribir(); // Intervalo de tiempo en milisegundos (100ms en este caso)
+                        } else {
+                            resolve();
+                        }
+                    }
+                    escribir();
+                });
+            }
+            function esperar(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            async function ejecutar() {
+                await escribirTexto(textoOriginal, textoElemento)
+                await esperar(2000);
+                indice = 0;
+                br = 0;
+                await escribirTexto(textoOriginal2, textoElemento2);
+            }
+
+            ejecutar();
+
+        </script>
+
 
 
 </body>
