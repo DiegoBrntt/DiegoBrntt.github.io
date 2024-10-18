@@ -12,7 +12,7 @@
 
     <h1 class="text-center text-white">Landing Page</h1>
 
-    <div class="container mt-5" id="carru"></div>
+    <div class="container mt-5" id="back"></div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -34,7 +34,7 @@
             return response.text();
         })
         .then(data => {
-            document.getElementById('carru').innerHTML = data;
+            document.getElementById('back').innerHTML = data;
         })
         .catch(error => {
             console.error('Error:', error);
