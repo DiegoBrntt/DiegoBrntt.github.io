@@ -1,4 +1,9 @@
 .img-dft { 
+    cursor: pointer;
+    transition: transform 0.2s;
     width: 100px;
     height: 100px;
+}
+.img-dft:hover {
+    transform: scale(1.25);
 }
