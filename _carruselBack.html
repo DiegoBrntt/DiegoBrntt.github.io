@@ -2,16 +2,17 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="d-flex justify-content-around">
-                <img src="./imagenes/Java.png" alt="Java" class="m-1 icon img-dft">
-                <img src="./imagenes/js.png" alt="JavaScript" class="m-1 icon img-dft">
-                <img src="./imagenes/ts.png" alt="TypeScript" class="m-1 icon img-dft">
+                <img src="./imagenes/Java.png" alt="Java" class="m-1 icon img-dft accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseJAVA" aria-expanded="false" aria-controls="collapseJAVA">
+                <img src="./imagenes/CS.png" alt="C#" class="m-1 icon img-dft accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseCS" aria-expanded="false" aria-controls="collapseCS">
+                <img src="./imagenes/js.png" alt="JavaScript" class="m-1 icon img-dft accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseJS" aria-expanded="false" aria-controls="collapseJS">
             </div>
         </div>
         <div class="carousel-item">
             <div class="d-flex justify-content-around">
+                <img src="./imagenes/ts.png" alt="TypeScript" class="m-1 icon img-dft accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTS" aria-expanded="false" aria-controls="collapseTS">
                 <img src="./imagenes/C.png" alt="C" class="m-1 icon img-dft accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="false" aria-controls="collapseC">
                 <img src="./imagenes/C++.png" alt="C++" class="m-1 icon img-dft accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseCPP" aria-expanded="false" aria-controls="collapseCPP">
-                <img src="./imagenes/CS.png" alt="C#" class="m-1 icon img-dft accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseCS" aria-expanded="false" aria-controls="collapseCS">
+                
             </div>
         </div>
         <div class="carousel-item">
@@ -54,4 +55,25 @@
         </div>
       </div>
     </div>
+    <div class="accordion-item border-0">
+        <div id="collapseJS" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0">
+        <div id="collapseTS" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div> 
+        </div>
+      </div>
+      <div class="accordion-item border-0">
+        <div id="collapseJAVA" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
   </div>
